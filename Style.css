@@ -1,0 +1,162 @@
+*{
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.7)), url(./Media/Background-Image-Home-Page.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo-Principale {
+    width: 15%;    
+}
+
+.Navbar-Link {
+    display: flex;
+    list-style-type: none; 
+}
+
+.Link {
+    color: aqua;
+    text-decoration: none;
+    padding: 0vh 2vh; 
+}
+
+.Link:hover {
+    border-bottom-style: solid;
+}
+
+header {
+    padding-top: 10vh;
+}
+
+header > h1, p {
+    color: aqua;
+}
+
+h2 {
+    color: black;
+    text-align: center;    
+}
+
+h3 {
+    font-size: 17px;
+    color: green;
+    margin: 2% 2%;
+    margin-bottom: 10%;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.Principal {
+    display: flex;
+    width: 60%;
+}
+
+.Principal-Section {
+    margin: 0% 1%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: justify;
+}
+
+.Principal-Img {
+    width: 100%;
+}
+
+.Principal-Article {
+    margin: 2% 2%;
+}
+
+.Date {
+    margin: 2% 2%;
+    color: cadetblue;
+}
+
+.Button-Read-All {
+    margin: 2% 2%;
+    margin-top: 10%;
+    background-color: white;
+    color: black;
+}
+
+.Button-Read-All:hover {
+    background-color: yellow;
+    color: black;
+}
+
+aside {
+    width: 40%;
+    text-align: center;
+    background-color: darkgrey;
+}
+
+.Return-Home {
+    width: 10%;
+    background-color: white;
+    margin-left: 85%;
+    margin-top: 35%;
+}
+
+
+
+/* Media Queries per Smartphone */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        .Navbar-Link {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Logo-Principale {
+            width: 30%;
+        }
+    }
+
+    .Principal {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .Principal-Section {
+        margin: 1%;
+
+    }
+
+    
+    aside {
+        .Return-Home {
+            width: 30%;
+            margin-left: 60%;
+            margin-top: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    
+    aside {
+        .Return-Home {
+            width: 25%;
+            margin-left: 70%;
+            margin-top: 100%;
+        }
+    }
+}
