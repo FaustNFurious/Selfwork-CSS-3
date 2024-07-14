@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover; 
+    margin: 0%;
 }
 
 nav {
@@ -104,13 +105,44 @@ aside {
     background-color: darkgrey;
 }
 
-.Return-Home {
-    width: 10%;
-    background-color: white;
-    margin-left: 85%;
-    margin-top: 35%;
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    margin-top: 3%;
+    align-items: center;
 }
 
+.Navbar-Social-Media-Link {
+    list-style-type: none;
+}
+
+.Social-Media-Link {
+    text-decoration: none;
+    color: white;
+}
+
+.Return-Home {
+    height: 10%;
+    width: 10%;
+    margin-left: 90%;
+    margin-bottom: 3%;
+    background-color: white;
+    animation-name: Button-Return-Home;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes Button-Return-Home {
+    0% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 
 
 /* Media Queries per Smartphone */
@@ -140,23 +172,8 @@ aside {
 
     }
 
-    
-    aside {
-        .Return-Home {
-            width: 30%;
-            margin-left: 60%;
-            margin-top: 100%;
-        }
+    .Return-Home {
+        width: 10%;
     }
-}
 
-@media screen and (max-width:900px) {
-    
-    aside {
-        .Return-Home {
-            width: 25%;
-            margin-left: 70%;
-            margin-top: 100%;
-        }
-    }
 }
