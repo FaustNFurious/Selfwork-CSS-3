@@ -126,6 +126,7 @@ footer {
 .Return-Home {
     height: 50px;
     width: 50px;
+    border-radius: 15%;
     background-color: white;
     animation-name: Ret-Home;
     animation-duration: 3s;
